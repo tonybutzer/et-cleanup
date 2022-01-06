@@ -1,0 +1,9 @@
+products: ['etasw_',]
+start_year: 1972
+end_year: 2019
+
+max_concurrent_containers: 22
+max_cpu_percent: 220
+min_memory_available: 4
+
+sleep_time: 5
