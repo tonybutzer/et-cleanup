@@ -1,9 +1,9 @@
-products: ['etasw_',]
-start_year: 1972
+products: ['dd_',]
+start_year: 2000
 end_year: 2019
 
-max_concurrent_containers: 22
+max_concurrent_containers: 8
 max_cpu_percent: 220
 min_memory_available: 4
 
-sleep_time: 5
+sleep_time: 10

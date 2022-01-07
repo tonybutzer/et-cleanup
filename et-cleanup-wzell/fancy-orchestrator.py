@@ -1,3 +1,4 @@
+import sys
 import time
 import os
 import subprocess
@@ -69,7 +70,7 @@ class Bzipper:
         #print(full_cmd)
         docker_image =  "tbutzer/bzipper_docker_image"
         #print(docker_image)
-        name_c = file_name
+        name_c = os.path.basename(file_name)
         c = self._start_container(docker_image, full_cmd, name_c)
         print("real name is", c.name, product)
         print("==="*30)
