@@ -62,7 +62,12 @@ class Bzipper:
 
     def _start_etm(self, year, product):
     
-        file_name = f'ws-enduser/wzell/{product}_daily_{year}.nc'
+        pattern = self.etm_parms['pattern']
+        file_name = pattern
+        print(pattern)
+        file_name = file_name.format(product=product,year=year)
+        print(file_name)
+        #file_name = f'ws-enduser/wzell/{product}_daily_{year}.nc'
         cmd_opt = file_name
         print(cmd_opt)
         cmd = 'python3 bzip2-scp-one-file.py '
