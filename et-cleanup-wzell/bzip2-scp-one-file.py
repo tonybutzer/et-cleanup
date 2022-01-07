@@ -31,8 +31,10 @@ def copy_scp_delete(file):
     fs.get(file,'./')
     lfile = os.path.basename(file)
     zfile = bzip2_me(lfile)
-    scp_me(zfile)
-    print(zfile)
+    #scp_me(zfile)
+    s3file=f'ws-enduser/bzip2-wzell/{zfile}'
+    fs.put(zfile,s3file)
+    print("unlink:", zfile)
     os.unlink(zfile)
 
 

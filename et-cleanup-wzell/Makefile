@@ -4,6 +4,9 @@ cat:
 	cat Makefile
 
 
+run:
+	docker run -it ${Image} bash
+
 build:
 	docker build -t ${Image} .
 
