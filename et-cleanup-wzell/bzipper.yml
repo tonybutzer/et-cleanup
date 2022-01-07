@@ -1,10 +1,10 @@
-products: ['etasw_',]
+products: ['dd_',]
 start_year: 1950
 end_year: 2099
 
-pattern: ws-enduser/wzell/{product}_monthly_{year}.nc
+pattern: ws-enduser/wzell/{product}_daily_{year}.nc
 
-max_concurrent_containers: 16
+max_concurrent_containers: 10
 max_cpu_percent: 220
 min_memory_available: 4
 
