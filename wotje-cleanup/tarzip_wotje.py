@@ -6,7 +6,7 @@ import sys
 import fsspec
 import boto3
 
-year = 2009
+year = sys.argv[1]
 
 bucket = 'ws-out'
 input_prefix='WOTJE/Run08_13_2021/wotje_imerg_081321_o/'
